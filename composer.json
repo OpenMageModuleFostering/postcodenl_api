@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "Simplified-BSD-License",
     "homepage": "",
-    "description": "Complement and validate Dutch addresses at Checkout, and check for order errors and fraud risks.",
+    "description": "Complement and validate Dutch addresses at Checkout.",
     "authors": [
     {
         "name": "Postcode.nl Technical Support",

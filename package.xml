@@ -1,30 +1,30 @@
 <?xml version="1.0"?>
 <package>
     <name>PostcodeNl_Api</name>
-    <version>1.2.4.0</version>
+    <version>1.2.5.0</version>
     <stability>stable</stability>
     <license>Simplified BSD License</license>
     <channel>community</channel>
     <extends/>
-    <summary>Complement and validate Dutch addresses at Checkout, and check for order errors and fraud risks.</summary>
-    <description>Complement and validate Dutch addresses at Checkout with the free postcode Magento plugin from Postcode.nl.&#xD;
-Also includes the free Postcode.nl Signal API service to validate and enrich order information, as well as check for potential fraud risk via the Dutch authorities.&#xD;
+    <summary>Complement and validate Dutch addresses at Checkout.</summary>
+    <description>Complement and validate Dutch addresses at Checkout with the postcode Magento plugin from Postcode.nl.&#xD;
 &#xD;
  &#x2022; Reduce address errors&#xD;
  &#x2022; Reduce costs from undelivered mail and packages&#xD;
  &#x2022; Offer extra service for your customers with easy address entry&#xD;
  &#x2022; Improve sale conversion&#xD;
- &#x2022; Get warnings for potential incorrect order data&#xD;
- &#x2022; Check against the Dutch authorities' fraud warning database&#xD;
 &#xD;
-The postcode Magento plugin from Postcode.nl is free of charge, based on a Fair-Use policy. The use of the Postcode.nl Magento plugin is subject to our Terms and Conditions.</description>
+The use of the Postcode.nl Magento plugin is subject to our Terms and Conditions.</description>
     <notes>Fixes:&#xD;
-- Fix for admin access issue related to SUPEE-6285 patch&#xD;
+- Marked compatible with PHP7&#xD;
+- Simpler config for enabling addon in frontend and backend&#xD;
+- Updated readme texts and links&#xD;
+- Removed signal api&#xD;
 </notes>
     <authors><author><name>Postcode.nl Technical Support</name><user>TechPostcodeNl</user><email>tech@postcode.nl</email></author></authors>
-    <date>2015-07-08</date>
-    <time>11:44:00</time>
-    <contents><target name="magecommunity"><dir name="PostcodeNl"><dir name="Api"><dir name="Block"><file name="Jsinit.php" hash="79bb826a50ce0cf4f87cc2f958bfafa1"/></dir><dir name="Helper"><file name="Data.php" hash="820d2fed4cbc0d1dbd8f197a78e549f1"/></dir><dir name="Model"><file name="Observer.php" hash="d394877fb8340673dbb78751008cae5f"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="PcnlController.php" hash="5ee32195d2f53a1b5b98caec9174f416"/></dir><file name="JsonController.php" hash="6a3bff054e3229faaae2aa55f9a3cf3c"/></dir><dir name="data"><dir name="postcodenl_api_setup"><file name="data-upgrade-1.0.8.0-1.1.0.0.php" hash="169658dbcaec550a4c11820e0d620ecf"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="5d518aeaeae028b6299c7cf3d6e54f60"/><file name="config.xml" hash="43b708f1c951f3c32a029c2c7133f31e"/><file name="system.xml" hash="429eb397ed1fc622b970de3378ba4d77"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="postcodenl"><dir name="api"><file name="lookup.xml" hash="e8f6295a91c9c5bfd116ae1048a5445d"/></dir></dir></dir><dir name="template"><dir name="postcodenl"><dir name="api"><file name="jsinit.phtml" hash="8623676f4c6f4068d0b51e31dcfa08e9"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="postcodenl"><dir name="api"><file name="lookup.xml" hash="d2408958337c27b6fe9a33630e2d1714"/></dir></dir></dir><dir name="template"><dir name="postcodenl"><dir name="api"><file name="jsinit.phtml" hash="ff32e12bbc26e4414dd8ca76edc4ed0f"/></dir></dir></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="PostcodeNl_Api.csv" hash="f70ab07d4fbee85d3de8d15decff77d2"/></dir><dir name="nl_NL"><file name="PostcodeNl_Api.csv" hash="1f14faf448152ce546215f14cb4d66f8"/></dir></target><target name="mageweb"><dir name="js"><dir name="postcodenl"><dir name="api"><file name="lookup.js" hash="eff8624d36a501f8deb6416e06dc2c54"/></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="postcodenl"><dir name="api"><dir name="css"><file name="lookup.css" hash="c58103b505f8bcdf55cea1159ca21e27"/></dir><dir name="images"><file name="postcode-logo.png" hash="da02bc29be1057a0201e63f81ee4bd02"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="postcodenl"><dir name="api"><dir name="css"><file name="lookup.css" hash="ea6b231d66e2ebfb2f9f1431abac0382"/></dir><dir name="images"><file name="postcode-logo.png" hash="da02bc29be1057a0201e63f81ee4bd02"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="PostcodeNl_Api.xml" hash="feeaf95128ffe4ad109ed8b0b8bc85ab"/></dir></target></contents>
+    <date>2016-07-18</date>
+    <time>09:33:29</time>
+    <contents><target name="magecommunity"><dir name="PostcodeNl"><dir name="Api"><dir name="Block"><file name="Jsinit.php" hash="79bb826a50ce0cf4f87cc2f958bfafa1"/></dir><dir name="Helper"><file name="Data.php" hash="dcbf45568451bbfec496b4a09745af15"/></dir><dir name="Model"><file name="Observer.php" hash="a3e9394931c993fea90a35ce6c83b014"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="PcnlController.php" hash="ca302f7d30e0e1e9e63563e2122888c5"/></dir><file name="JsonController.php" hash="40b87bc78b843b5faa742cb9d4ab0938"/></dir><dir name="data"><dir name="postcodenl_api_setup"><file name="data-upgrade-1.0.8.0-1.1.0.0.php" hash="169658dbcaec550a4c11820e0d620ecf"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="5d518aeaeae028b6299c7cf3d6e54f60"/><file name="config.xml" hash="f2df408011e8f08aa0e850274d1bd45a"/><file name="system.xml" hash="b3c86cb3e78b614f0a542762ec734973"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><dir name="postcodenl"><dir name="api"><file name="lookup.xml" hash="95c19834f5160de233ec2a4b26d3e0e6"/></dir></dir></dir><dir name="template"><dir name="postcodenl"><dir name="api"><file name="jsinit.phtml" hash="8623676f4c6f4068d0b51e31dcfa08e9"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="postcodenl"><dir name="api"><file name="lookup.xml" hash="d2408958337c27b6fe9a33630e2d1714"/></dir></dir></dir><dir name="template"><dir name="postcodenl"><dir name="api"><file name="jsinit.phtml" hash="ff32e12bbc26e4414dd8ca76edc4ed0f"/></dir></dir></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="PostcodeNl_Api.csv" hash="38802fe32da59f0fa1e86cef36d74a38"/></dir><dir name="nl_NL"><file name="PostcodeNl_Api.csv" hash="c8644404614701ff8440cad5689a7317"/></dir></target><target name="mageweb"><dir name="js"><dir name="postcodenl"><dir name="api"><file name="lookup.js" hash="eff8624d36a501f8deb6416e06dc2c54"/></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="postcodenl"><dir name="api"><dir name="css"><file name="lookup.css" hash="c58103b505f8bcdf55cea1159ca21e27"/></dir><dir name="images"><file name="postcode-logo.png" hash="da02bc29be1057a0201e63f81ee4bd02"/></dir></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="postcodenl"><dir name="api"><dir name="css"><file name="lookup.css" hash="ea6b231d66e2ebfb2f9f1431abac0382"/></dir><dir name="images"><file name="postcode-logo.png" hash="da02bc29be1057a0201e63f81ee4bd02"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="PostcodeNl_Api.xml" hash="feeaf95128ffe4ad109ed8b0b8bc85ab"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><extension><name>curl</name><min>7.10.5</min><max>7.99.0</max></extension></required></dependencies>
+    <dependencies><required><php><min>5.3.3</min><max>9.99.0</max></php><extension><name>curl</name><min>7.10.5</min><max>7.99.0</max></extension></required></dependencies>
 </package>
