@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/PostcodeNl_Api",
+    "type": "magento-module",
+    "license": "Simplified-BSD-License",
+    "homepage": "",
+    "description": "Complement and validate Dutch addresses at Checkout with the free postcode Magento plugin from Postcode.nl.",
+    "authors": [
+    {
+        "name": "Postcode.nl Technical Support",
+        "email": "tech@postcode.nl"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
