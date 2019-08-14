@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "Simplified-BSD-License",
     "homepage": "",
-    "description": "Complement and validate Dutch addresses at Checkout with the free postcode Magento plugin from Postcode.nl.",
+    "description": "Complement and validate Dutch addresses at Checkout, and check for order errors and fraud risks.",
     "authors": [
     {
         "name": "Postcode.nl Technical Support",
